@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Snake
+  - Food
+  - wall
+  - Poison
   layers:
   - Default
   - TransparentFX

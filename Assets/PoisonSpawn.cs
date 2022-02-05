@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FoodSpawn : MonoBehaviour
+public class PoisonSpawn : MonoBehaviour
 {
     public BoxCollider2D gridArea;
 
@@ -23,9 +23,7 @@ public class FoodSpawn : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       // SnakeController.snakecontroller = collision.gameObject.GetComponent<SnakeController>();
-        //if (collision.gameObject.GetComponent<SnakeController>())
-        if(collision.gameObject.tag == "Snake")
+        if (collision.tag == "Snake")
         {
             RandomizePosition();
         }
